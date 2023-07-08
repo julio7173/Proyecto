@@ -1,0 +1,408 @@
+{
+	"info": {
+		"_postman_id": "5369c4a9-bb5c-4623-ae9b-2082e8bcea51",
+		"name": "dpa_ddjj",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26425211"
+	},
+	"item": [
+		{
+			"name": "Iniciarsesion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"m.blanco@umss.edu.bo\",\r\n    \"password\":\"3582641\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/usuario/iniciar-sesion",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario",
+						"iniciar-sesion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearDeclaracion",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "kfsE4T_bgfrRC4aUme-1SEO7g8mqLVsv",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"informacion\" : {\r\n        \"fecha\": \"06/07/2023\",\r\n        \"mes\": \"JULIO\",\r\n        \"gestion\": \"2023\",\r\n        \"estado\": \"PEN\"\r\n    },\r\n    \"categorias\" : [\r\n        {\r\n            \"id_categoria\" : 1,\r\n            \"remuneracion\" : 2500\r\n        },\r\n        {\r\n            \"id_categoria\" : 2,\r\n            \"remuneracion\" : 0\r\n        },\r\n        {\r\n            \"id_categoria\" : 3,\r\n            \"remuneracion\" : 5000\r\n        },\r\n        {\r\n            \"id_categoria\" : 4,\r\n            \"remuneracion\" : 0\r\n        },\r\n        {\r\n            \"id_categoria\" : 5,\r\n            \"remuneracion\" : 0\r\n        },\r\n        {\r\n            \"id_categoria\" : 6,\r\n            \"remuneracion\" : 0\r\n        },\r\n        {\r\n            \"id_categoria\" : 7,\r\n            \"remuneracion\" : 0\r\n        },\r\n        {\r\n            \"id_categoria\" : 8,\r\n            \"remuneracion\" : 0\r\n        },\r\n        {\r\n            \"id_categoria\" : 9,\r\n            \"remuneracion\" : 0\r\n        }\r\n    ],\r\n    \"instituciones\": [\r\n        {\r\n            \"id_institucion\" : 1,\r\n            \"nombre\" : \"PIL\",\r\n            \"total_ganado\" : 4500,\r\n            \"cargo\" : \"JEFE\",\r\n            \"tipo\" : \"I\"\r\n        },\r\n        {\r\n            \"id_institucion\" : 2,\r\n            \"nombre\" : \"ENTEL\",\r\n            \"total_ganado\" : 500,\r\n            \"cargo\" : \"GERENTE\",\r\n            \"tipo\" : \"R\"\r\n        },\r\n        {\r\n            \"id_institucion\" : 125,\r\n            \"nombre\" : \"TIGO\",\r\n            \"total_ganado\" : 500,\r\n            \"cargo\" : \"GERENTE\",\r\n            \"tipo\" : \"I\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/declaracion-jurada/crear-declaracion-jurada?id=50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"declaracion-jurada",
+						"crear-declaracion-jurada"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerGestiones",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "kfsE4T_bgfrRC4aUme-1SEO7g8mqLVsv",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/declaracion-jurada/obtener-gestiones?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"declaracion-jurada",
+						"obtener-gestiones"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerDeclaracionesGestion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/declaracion-jurada/obtener-declaraciones-gestion?id=1&gestion=2023",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"declaracion-jurada",
+						"obtener-declaraciones-gestion"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "gestion",
+							"value": "2023"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editar",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "kfsE4T_bgfrRC4aUme-1SEO7g8mqLVsv",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fecha\": {\n        \"fecha\": \"2023-03-03\",\n        \"fk_usuario\": 50,\n        \"gestion\": \"2023\",\n        \"id_declaracion_jurada\": 7,\n        \"mes\": \"MARZO\",\n        \"estado\":\"DEC\"\n    },\n    \"categoria\": [\n        {\"id\": 399, \"id_categoria\": 1, \"id_declaracion_jurada\": 7, \"remuneracion\": 0},\n        {\"id\": 400, \"id_categoria\": 2, \"id_declaracion_jurada\": 7, \"remuneracion\": 0},\n        {\"id\": 401, \"id_categoria\": 3, \"id_declaracion_jurada\": 7, \"remuneracion\": 0},\n        {\"id\": 402, \"id_categoria\": 4, \"id_declaracion_jurada\": 7, \"remuneracion\": 0},\n        {\"id\": 403, \"id_categoria\": 5, \"id_declaracion_jurada\": 7, \"remuneracion\": 0},\n        {\"id\": 403, \"id_categoria\": 6, \"id_declaracion_jurada\": 7, \"remuneracion\": 0},\n        {\"id\": 405, \"id_categoria\": 7, \"id_declaracion_jurada\": 7, \"remuneracion\": 0},\n        {\"id\": 406, \"id_categoria\": 8, \"id_declaracion_jurada\": 7, \"remuneracion\": 0},\n        {\"id\": 407, \"id_categoria\": 9, \"id_declaracion_jurada\": 7, \"remuneracion\": 0}\n    ],\n    \"instituciones\": [\n        { \"id\": 233, \"id_declaracion_jurada\": 7, \"id_institucion\": 1, \"total_ganado\": 0, \"cargo\": \"Gerente de Servicios\", \"tipo\": \"I\", \"nombre\": \"PIL\"},\n        { \"id\": 234, \"id_declaracion_jurada\": 7, \"id_institucion\": 2, \"total_ganado\": 0, \"cargo\": \"Relaciones Exteriores\", \"tipo\": \"R\", \"nombre\": \"ENTEL\"},\n        { \"id\": null, \"id_declaracion_jurada\": 7, \"id_institucion\": null, \"total_ganado\": 5000, \"cargo\": \"Gerente de ventas\", \"tipo\":  \"I\", \"nombre\": \"DIGITAL\"}\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/declaracion-jurada/editar-declaracion?idDeclaracion=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"declaracion-jurada",
+						"editar-declaracion"
+					],
+					"query": [
+						{
+							"key": "idDeclaracion",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizarDeclaracion",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "kfsE4T_bgfrRC4aUme-1SEO7g8mqLVsv",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fecha\": {\n        \"fecha\": \"2023-04-04\",\n        \"fk_usuario\": 1,\n        \"gestion\": \"2023\",\n        \"id_declaracion_jurada\": 7,\n        \"mes\": \"ABRIL\",\n        \"estado\":\"DEC\"\n    },\n    \"categoria\": [\n        {\"id\": 399, \"id_categoria\": 1, \"id_declaracion_jurada\": 7, \"remuneracion\": 1000},\n        {\"id\": 400, \"id_categoria\": 2, \"id_declaracion_jurada\": 7, \"remuneracion\": 0},\n        {\"id\": 401, \"id_categoria\": 3, \"id_declaracion_jurada\": 7, \"remuneracion\": 0},\n        {\"id\": 402, \"id_categoria\": 4, \"id_declaracion_jurada\": 7, \"remuneracion\": 0},\n        {\"id\": 403, \"id_categoria\": 5, \"id_declaracion_jurada\": 7, \"remuneracion\": 2000},\n        {\"id\": 403, \"id_categoria\": 6, \"id_declaracion_jurada\": 7, \"remuneracion\": 0},\n        {\"id\": 405, \"id_categoria\": 7, \"id_declaracion_jurada\": 7, \"remuneracion\": 0},\n        {\"id\": 406, \"id_categoria\": 8, \"id_declaracion_jurada\": 7, \"remuneracion\": 0},\n        {\"id\": 407, \"id_categoria\": 9, \"id_declaracion_jurada\": 7, \"remuneracion\": 0}\n    ],\n    \"instituciones\": [\n        { \"id\": 233, \"id_declaracion_jurada\": 7, \"id_institucion\": 1, \"total_ganado\": 4000, \"cargo\": \"Gerente de Servicios\", \"tipo\": \"I\", \"nombre\": \"PIL\"},\n        { \"id\": 234, \"id_declaracion_jurada\": 7, \"id_institucion\": 2, \"total_ganado\": 3000, \"cargo\": \"Relaciones Exteriores\", \"tipo\": \"R\", \"nombre\": \"ENTEL\"},\n        { \"id\": null, \"id_declaracion_jurada\": 7, \"id_institucion\": null, \"total_ganado\": 5000, \"cargo\": \"Gerente de ventas\", \"tipo\":  \"I\", \"nombre\": \"JALA\"}\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/declaracion-jurada/actualizar-declaracion?idDeclaracion=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"declaracion-jurada",
+						"actualizar-declaracion"
+					],
+					"query": [
+						{
+							"key": "idDeclaracion",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerDeclaracion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/declaracion-jurada/obtener-declaracion?idDeclaracion=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"declaracion-jurada",
+						"obtener-declaracion"
+					],
+					"query": [
+						{
+							"key": "idDeclaracion",
+							"value": "10"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtenerDeclaracionSinListas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/declaracion-jurada/obtener-declaracion-jurada?idDeclaracion=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"declaracion-jurada",
+						"obtener-declaracion-jurada"
+					],
+					"query": [
+						{
+							"key": "idDeclaracion",
+							"value": "10"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscarUsuarioCI",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "nK7OBdKhgOwjNcMOp163T8Z4rYVaUEg3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/usuario/buscar-usuario?ci=3582641",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario",
+						"buscar-usuario"
+					],
+					"query": [
+						{
+							"key": "ci",
+							"value": "3582641"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InformacionUsuario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "nK7OBdKhgOwjNcMOp163T8Z4rYVaUEg3",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/usuario/informacion-usuario?ci=3582641",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario",
+						"informacion-usuario"
+					],
+					"query": [
+						{
+							"key": "ci",
+							"value": "3582641"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listaUsuario",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarDeclaracion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/declaracion-jurada/eliminar-declaracion?idDeclaracion=13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"declaracion-jurada",
+						"eliminar-declaracion"
+					],
+					"query": [
+						{
+							"key": "idDeclaracion",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,11 @@
+INSERT INTO public.categoria VALUES (1, 'Docente');
+INSERT INTO public.categoria VALUES (2, 'Administrativo');
+INSERT INTO public.categoria VALUES (3, 'Curso intersemestral (Invierno o Verano)');
+INSERT INTO public.categoria VALUES (4, 'Programa de titulación de Alumnos Antiguos PTAANG');
+INSERT INTO public.categoria VALUES (5, 'Examen de ingreso');
+INSERT INTO public.categoria VALUES (6, 'Examen de grado');
+INSERT INTO public.categoria VALUES (7, 'Consultoría en línea');
+INSERT INTO public.categoria VALUES (8, 'Consultoría por producto');
+INSERT INTO public.categoria VALUES (9, 'Otros');
+
+

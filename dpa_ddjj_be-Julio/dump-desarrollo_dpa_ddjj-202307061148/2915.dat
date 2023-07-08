@@ -1,0 +1,11 @@
+INSERT INTO public.declaracion_jurada_institucion VALUES (233, 7, 1, 0, 'Gerente de Servicios', 'I');
+INSERT INTO public.declaracion_jurada_institucion VALUES (234, 7, 2, 0, 'Relaciones Exteriores', 'R');
+INSERT INTO public.declaracion_jurada_institucion VALUES (241, 7, 15, 5000, 'GERENTE DE VENTAS', 'I');
+INSERT INTO public.declaracion_jurada_institucion VALUES (242, 8, 1, 4500, 'JEFE', 'I');
+INSERT INTO public.declaracion_jurada_institucion VALUES (243, 8, 2, 500, 'GERENTE', 'R');
+INSERT INTO public.declaracion_jurada_institucion VALUES (244, 8, 126, 500, 'GERENTE', 'I');
+INSERT INTO public.declaracion_jurada_institucion VALUES (245, 9, 1, 4500, 'JEFE', 'I');
+INSERT INTO public.declaracion_jurada_institucion VALUES (246, 9, 2, 500, 'GERENTE', 'R');
+INSERT INTO public.declaracion_jurada_institucion VALUES (247, 9, 126, 500, 'GERENTE', 'I');
+
+

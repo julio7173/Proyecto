@@ -1,0 +1,5 @@
+INSERT INTO public.auth_assignment VALUES ('Docente', '1', NULL);
+INSERT INTO public.auth_assignment VALUES ('Docente', '50', NULL);
+INSERT INTO public.auth_assignment VALUES ('Administrador', '5', NULL);
+
+

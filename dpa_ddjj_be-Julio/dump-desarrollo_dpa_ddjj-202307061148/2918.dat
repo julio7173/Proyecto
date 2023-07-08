@@ -1,0 +1,7 @@
+INSERT INTO public.migration VALUES ('m000000_000000_base', 1688423626);
+INSERT INTO public.migration VALUES ('m140506_102106_rbac_init', 1688479569);
+INSERT INTO public.migration VALUES ('m170907_052038_rbac_add_index_on_auth_assignment_user_id', 1688479569);
+INSERT INTO public.migration VALUES ('m180523_151638_rbac_updates_indexes_without_prefix', 1688479569);
+INSERT INTO public.migration VALUES ('m200409_110543_rbac_update_mssql_trigger', 1688479569);
+
+

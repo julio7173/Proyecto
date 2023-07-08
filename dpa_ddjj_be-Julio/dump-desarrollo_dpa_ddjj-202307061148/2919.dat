@@ -1,0 +1,8 @@
+INSERT INTO public.usuario VALUES (1, 'Aranibar', 'Ayala', 'Juan', 'Roberto', 'j.roberto@umss.edu.bo', '6548777', '$2y$13$SKq9RmAPpU/3CPcHAI37weR7g.V2KGcf0hAeN.wL2Lxif0wQeC4J6', 'af5vaefvkfbv7b6eb');
+INSERT INTO public.usuario VALUES (5, 'Becerra', 'Meneces', 'Ruben', 'Marcelo', 'ru.becerra@umss.edu.bo', '4419075', '$2y$13$ybbCFVKXnXOCY5Ot0P9OTu722VxEoBe8ZPUjmHTspa369wHRyzV5m', 'nK7OBdKhgOwjNcMOp163T8Z4rYVaUEg3');
+INSERT INTO public.usuario VALUES (42, 'Morales', 'Garcia', 'Elizabeth', '', 'elizabeth@umss.edu.bo', '3757238', '$2y$13$Aj/hIThxqO02bq7mIRBbV.uPpFu5oxAUJmnab53dD5.AyoKIdV.Fq', 'itWpO4tgrbTVKR10jzb0yBN9gxkJIk5o');
+INSERT INTO public.usuario VALUES (47, 'Pozo', 'Gonzales', 'Ronmy', 'Andy', 'a.pozo@umss.edu.bo', '5905624', '$2y$13$J6V1RKmHcdwh.IbplA/Pvu6Kj6R8qaeTMpdxA4geIunPSSXc87wL.', 'fdT9vmGasmfJsqbmJIvWPgUL2D798jgQ');
+INSERT INTO public.usuario VALUES (50, 'Blanco', 'Coca', 'Maria', 'Leticia', 'm.blanco@umss.edu.bo', '3582641', '$2y$13$/8tcqd9TbeLHhna.c0wrJepU5cxGeisFWrtvOLrtTXgpY05iDizT6', 'kfsE4T_bgfrRC4aUme-1SEO7g8mqLVsv');
+INSERT INTO public.usuario VALUES (52, 'Alfaro', 'Bazan', 'Boris', 'Fernando', 'b.alfaro@umss.edu.bo', '5912612', '$2y$13$tWKrBIJg4rBlz68j6JcAuuWiJlSQetLzq/ogU/kGPAe4KBXJ5bHWq', 'ssIx64SUMRMYBs5Sp_XUXopqSNec_T_Y');
+
+

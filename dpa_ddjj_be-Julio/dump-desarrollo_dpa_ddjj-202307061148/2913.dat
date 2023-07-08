@@ -1,0 +1,29 @@
+INSERT INTO public.declaracion_jurada_categoria VALUES (7, 1, 399, 1000);
+INSERT INTO public.declaracion_jurada_categoria VALUES (7, 2, 400, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (7, 3, 401, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (7, 4, 402, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (7, 5, 403, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (7, 6, 404, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (7, 7, 405, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (7, 8, 406, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (7, 9, 407, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (8, 1, 408, 2500);
+INSERT INTO public.declaracion_jurada_categoria VALUES (8, 2, 409, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (8, 3, 410, 5000);
+INSERT INTO public.declaracion_jurada_categoria VALUES (8, 4, 411, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (8, 5, 412, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (8, 6, 413, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (8, 7, 414, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (8, 8, 415, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (8, 9, 416, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (9, 1, 417, 2500);
+INSERT INTO public.declaracion_jurada_categoria VALUES (9, 2, 418, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (9, 3, 419, 5000);
+INSERT INTO public.declaracion_jurada_categoria VALUES (9, 4, 420, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (9, 5, 421, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (9, 6, 422, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (9, 7, 423, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (9, 8, 424, 0);
+INSERT INTO public.declaracion_jurada_categoria VALUES (9, 9, 425, 0);
+
+

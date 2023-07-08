@@ -1,0 +1,4 @@
+INSERT INTO public.auth_item VALUES ('Docente', 1, '', NULL, NULL, NULL, NULL);
+INSERT INTO public.auth_item VALUES ('Administrador', 1, NULL, NULL, NULL, NULL, NULL);
+
+

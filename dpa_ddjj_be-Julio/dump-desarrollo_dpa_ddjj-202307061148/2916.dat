@@ -1,0 +1,10 @@
+INSERT INTO public.institucion VALUES (1, 'PIL');
+INSERT INTO public.institucion VALUES (2, 'ENTEL');
+INSERT INTO public.institucion VALUES (15, 'DIGITAL');
+INSERT INTO public.institucion VALUES (124, 'VIVA');
+INSERT INTO public.institucion VALUES (18, 'COMTECO');
+INSERT INTO public.institucion VALUES (125, 'SONY');
+INSERT INTO public.institucion VALUES (126, 'TIGO');
+INSERT INTO public.institucion VALUES (127, 'JALA');
+
+
